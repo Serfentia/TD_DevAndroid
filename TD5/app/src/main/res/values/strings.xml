@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TD5</string>
+    <string name="contact_prenom"></string>
+    <string name="contact_nom"></string>
+</resources>

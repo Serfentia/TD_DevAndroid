@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="radioMidi">Midi</string>
+    <string name="radioSoir">Soir</string>
+    <string name="btnVal">Validé</string>
+    <string name="btnAnn">Annulé</string>
+</resources>
