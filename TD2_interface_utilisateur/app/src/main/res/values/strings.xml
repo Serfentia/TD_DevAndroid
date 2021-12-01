@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TD2_interface_utilisateur</string>
+    <string name="message">Salut tout le monde !</string>
+    <string name="repas">Veuillez choisir votre menu :</string>
+    <string name="ChoixA">Fruit</string>
+    <string name="ChoixB">Fromage</string>
+    <string name="Midi">Midi</string>
+    <string name="Soir">Soir</string>
+    <string name="ok">Valider</string>
+    <string name="non">Annuler</string>
+    <string name="meteo">Veuillez faire votre relevé météologique :</string>
+    <string name="Vent">Vitesse du vent en km/h</string>
+    <string name="Temp">Température en °C</string>
+    <string name="EntreeRepas">Choisir une entrée</string>
+    <string name="PlatRepas">Choisir un plat</string>
+
+    <string-array name="EtatDuCiel">
+        <item>Couvert</item>
+        <item>Dégagé</item>
+        <item>Pluvieux</item>
+    </string-array>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Choix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meteo"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+
+    <DatePicker
+        android:id="@+id/DP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Choix"
+        android:datePickerMode="calendar" />
+
+    <TimePicker
+        android:id="@+id/TP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:timePickerMode="spinner"
+        android:layout_below="@id/DP"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/TP">
+
+        <EditText
+            android:id="@+id/Temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/Temp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <EditText
+            android:id="@+id/Vent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/Vent"
+            android:layout_marginHorizontal="10dp"/>
+    </LinearLayout>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@array/EtatDuCiel"
+            android:layout_below="@id/LL"
+            android:layout_centerHorizontal="true"
+            android:spinnerMode="dropdown"/>
+
+
+</RelativeLayout>
