@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TD4_Les_Activites</string>
+    <string name="logButton">Login</string>
+    <string name="logoutButton">Logout</string>
+    <string name="Details">Details</string>
+    <string name="okBut">OK</string>
+    <string name="Lib">Libellé</string>
+    <string name="username">Entrez un nom d\'utilisateur</string>
+    <string name="nom_du_compte">Nom du compte :</string>
 </resources>

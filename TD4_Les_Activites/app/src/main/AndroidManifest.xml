@@ -8,9 +8,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TD4_Les_Activites">
+        android:theme="@style/Theme.TD4_Les_Activites"
+        android:name=".NewsListApplication">
         <activity
-            android:name=".MainActivity"
+            android:name=".DetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NewsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
