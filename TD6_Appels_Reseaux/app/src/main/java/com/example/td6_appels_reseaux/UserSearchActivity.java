@@ -32,8 +32,6 @@ public class UserSearchActivity extends AppCompatActivity {
                 .build()
                 .create(GithubService.class);
 
-
-
         Button ok = findViewById(R.id.ok);
         EditText search = findViewById(R.id.search);
 
