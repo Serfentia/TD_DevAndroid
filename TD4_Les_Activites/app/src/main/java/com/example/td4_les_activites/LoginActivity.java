@@ -22,10 +22,8 @@ public class LoginActivity extends AppCompatActivity {
         EditText name = (EditText) findViewById(R.id.username);
 
         logi.setOnClickListener(v -> {
-            /*Intent intent = new Intent(this, NewsActivity.class);
-            startActivity(intent);*/
             Intent intent = new Intent(this, NewsActivity.class);
-            intent.putExtra("login", name.getText());
+            intent.putExtra("login", name.getText().toString());
             startActivity(intent);
         });
     }
