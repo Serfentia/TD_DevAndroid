@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ViewHolder> {
@@ -41,8 +43,8 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ViewHo
         TextView lastNameTextView = holder.lastNameTextView;
         lastNameTextView.setText(contact.getNom());
 
-        String imageImageView;
-        imageImageView.setText(contact.getNom());
+
+
     }
 
     @Override
@@ -54,13 +56,16 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ViewHo
 
         public TextView firstNameTextView;
         public TextView lastNameTextView;
+        public ImageView ppimageView;
 
         public ViewHolder(View itemView){
             super(itemView);
 
-            firstNameTextView= (TextView) itemView.findViewById(R.id.prenom);
-            lastNameTextView= (TextView) itemView.findViewById(R.id.nom);
+            firstNameTextView = (TextView) itemView.findViewById(R.id.prenom);
+            lastNameTextView = (TextView) itemView.findViewById(R.id.nom);
+            ppimageView = (ImageView) itemView.findViewById((R.id.pp));
 
         }
     }
+
 }

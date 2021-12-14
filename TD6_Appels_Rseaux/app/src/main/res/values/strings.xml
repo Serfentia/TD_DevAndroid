@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TD6_Appels_Réseaux</string>
+    <string name="Valid">OK</string>
+    <string name="search">Search something...</string>
 </resources>
