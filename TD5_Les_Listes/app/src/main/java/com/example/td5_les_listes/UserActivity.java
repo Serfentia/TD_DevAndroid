@@ -12,7 +12,6 @@ import java.util.List;
 public class UserActivity extends AppCompatActivity {
 
     List<Contact> contacts = new ArrayList<>();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +27,8 @@ public class UserActivity extends AppCompatActivity {
         contacts.add(new Contact("Zinedine","Zidane", "https://cachedimages.podchaser.com/256x256/aHR0cHM6Ly9jcmVhdG9yLWltYWdlcy5wb2RjaGFzZXIuY29tL2MxYmYyZWM4OGE4OTQxNTUzZDUxNDA5ODgzYjYyNDYwLmpwZWc%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D"));
         contacts.add(new Contact("Yannick","Noah", "https://static1.ozap.com/articles/8/41/80/38/@/4237496-yannick-noah-128x128-1.jpg"));
 
-        ContactsAdapter adapter = new ContactsAdapter(contacts);
+
+        ContactsAdapter adapter = new ContactsAdapter(contacts, getApplicationContext());
         rvContacts.setAdapter(adapter);
         rvContacts.setLayoutManager(new LinearLayoutManager(this));
 

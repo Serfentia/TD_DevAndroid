@@ -17,9 +17,12 @@ import java.util.List;
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ViewHolder> {
 
     private final List<Contact> mContacts;
+    private final Context mContext;
 
-    public ContactsAdapter(List<Contact> contacts) {
+
+    public ContactsAdapter(List<Contact> contacts, Context mContext) {
         this.mContacts = contacts;
+        this.mContext = mContext;
     }
 
     @NonNull
@@ -43,7 +46,11 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ViewHo
         TextView lastNameTextView = holder.lastNameTextView;
         lastNameTextView.setText(contact.getNom());
 
+        ImageView ppImageView = holder.ppimageView;
 
+        Glide.with(mContext)
+                .load(contact.getImageUrl())
+                .into(ppImageView);
 
     }
 

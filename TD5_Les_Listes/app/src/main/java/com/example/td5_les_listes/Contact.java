@@ -24,17 +24,4 @@ public class Contact {
     public String getImageUrl() {
         return imageUrl;
     }
-
-    //Setters
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
 }
