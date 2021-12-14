@@ -53,6 +53,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ViewHo
                 .into(ppImageView);
 
     }
+    
     @Override
     public int getItemCount() {
         return mContacts.size();
